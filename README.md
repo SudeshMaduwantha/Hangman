@@ -1,5 +1,5 @@
 # Hangman Game
-  ![Screenshot](images/hangman.png)
+  ![Screenshot](static/images/hangman.png)
 
 ## Description
 This is a Hangman game implemented using Python and Flask. The game includes features such as hints, time limits, and scoring.
