@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="top-container">
+        <button id="start-button">Start New Game</button>
+        <div id="timer">Time: 0s</div>
+        <div id="score">Score: 0</div>
+    </div>
+    <h1>Hangman Game</h1>
+    <div id="game-container">
+        <div id="left-container">
+            <div class="word-completion" id="word-completion">__________</div>
+            <div id="hint">Hint: </div>
+            <input type="text" id="guess-input" maxlength="1">
+            <button id="guess-button">Guess</button>
+            <div class="message" id="message"></div>
+        </div>
+        <div id="right-container">
+            <div id="hangman-container">
+                <img id="hangman-image" src="{{ url_for('static', filename='images/0.png') }}" alt="Hangman">
+            </div>
+        </div>
+    </div>
+    <marquee id="footer" behavior="scroll" direction="left">
+        Develop by Sudesh Maduwantha Kumarasiri
+    </marquee>
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

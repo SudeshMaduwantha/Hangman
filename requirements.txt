@@ -1,0 +1,26 @@
+requirements.txt
+The requirements.txt file is used to specify the dependencies and libraries needed to run your Python application. When deploying a Flask application, this file ensures that the correct versions of all required packages are installed.
+
+Contents:
+
+Flask: The main web framework for building web applications in Python. It provides the tools and libraries needed to create routes, handle requests, and serve content.
+Example Content:
+
+makefile
+Copy code
+flask==2.0.2
+How It Works:
+
+Each line in requirements.txt specifies a package and its version. For example, flask==2.0.2 means that version 2.0.2 of Flask is required.
+When deploying to platforms like Heroku or setting up a virtual environment, running pip install -r requirements.txt installs all the specified packages.
+Purpose:
+
+Consistency: Ensures that everyone working on the project uses the same versions of libraries, reducing compatibility issues.
+Deployment: Simplifies the process of installing dependencies on deployment platforms or new environments.
+Usage:
+
+Create requirements.txt by running:
+bash
+Copy code
+pip freeze > requirements.txt
+This command captures all currently installed packages and their versions into the file.
