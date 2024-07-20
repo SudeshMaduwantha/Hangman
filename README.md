@@ -22,9 +22,9 @@ This is a Hangman game implemented using Python and Flask. The game includes fea
 
 ## Usage
 
-# Start the Flask application:
+## Start the Flask application:
     python app.py
 
-# Open your browser and navigate to http://localhost:5000.
+## Open your browser and navigate to http://localhost:5000.
 
-# Developed by Sudesh Maduwantha Kumarasiri
+### Developed by Sudesh Maduwantha Kumarasiri
